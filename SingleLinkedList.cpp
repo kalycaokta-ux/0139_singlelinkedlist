@@ -5,5 +5,11 @@ using namespace std;
 class Node
 {
 public:
-    int no.Mhs;
+    int noMhs;
+    Node *next;
+};
+
+class LinkedList
+{
+    
 }
