@@ -80,7 +80,7 @@ public:
 
     bool deNode(int nim)
     {
-        Node *cuurent, *previous;
+        Node *current, *previous;
 
         if (!search(nim, previous, current))
         return false;
@@ -101,5 +101,23 @@ public:
             cout << "\nList Kosong\n";
         }   
         else
+        {
+            cout << "\ndata di dalam list adalah:\n";
+            Node *currentNode = START;
+
+            while (currentNode != NULL)
+            {
+                cout << currentNode->noMhs << endl;
+                currentNode = currentNode->next;
+            }
+            cout << endl;
+        }
     }
+};
+
+int main()
+{
+    LinkedList mhs;
+    int nim;
+    char ch;
 }
