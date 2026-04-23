@@ -120,4 +120,34 @@ int main()
     LinkedList mhs;
     int nim;
     char ch;
+
+    do
+    { 
+        cout << "1. Menambah data ke dalam list" << endl;
+        cout << "2. Menghapus data dari dalam list" << endl;
+        cout << "3. Menampilkan semua data didalam list" << endl;
+        cout << "4. Mencari data dalam list" << endl;
+        cout << "5. Keluar" << endl;
+
+        cout << "\nMasukkan pilihan (1-5): ";
+        cin >> ch;
+
+        switch (ch)
+        {
+        case '1':
+            mhs.addNode();
+            break;
+
+        case '2':
+            if (mhs.listEmpty())
+            {
+                cout << "\nList Kosong" << endl;
+                break;
+            }
+
+            cout << "\nMasukkan no mahasiswa yang akan dihapus : ";
+        }
+    } 
+    
+    
 }
